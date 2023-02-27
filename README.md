@@ -4,4 +4,9 @@
 
 <a href="https://codeclimate.com/github/Kate1505/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/a0c7fc7bcb63211499d1/maintainability" /></a>
 
+brain-even game demonstration:
+
 <a href="https://asciinema.org/a/Ruuyt9AlM2n6q0e3PfljnvUOf" target="_blank"><img src="https://asciinema.org/a/Ruuyt9AlM2n6q0e3PfljnvUOf.svg" /></a>
+
+brain-calc game demonstration:
+<a href="https://asciinema.org/a/w6eZoXdC7N7VAdtpXdKxd5NgU" target="_blank"><img src="https://asciinema.org/a/w6eZoXdC7N7VAdtpXdKxd5NgU.svg" /></a>
