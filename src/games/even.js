@@ -13,14 +13,3 @@ const evenGame = () => {
   runGame(description, getRoundData);
 };
 export default evenGame;
-
-// const isEven = (randomNum) => randomNum % 2 === 0;
-
-// const getRoundData = () => {
-//   const randomNumber = getRandomNumber(1, 20);
-//   const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
-//   return [randomNumber, correctAnswer];
-// };
-// const startGame = () => gameRounds(description, getRoundData);
-
-// export default startGame;
