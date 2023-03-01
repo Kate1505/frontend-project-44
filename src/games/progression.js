@@ -16,8 +16,8 @@ const getRoundData = () => {
   const arrProgresLength = getRandomInt(6, 10);
   const num1 = getRandomInt(1, 10);
   const step = getRandomInt(1, 10);
-  const lastIndex = arrProgresLength - 1;
-  const progression = getProgression(num1, step, lastIndex);
+  const progression = getProgression(num1, step, arrProgresLength);
+  const lastIndex = progression.length - 1;
   const randomIndex = getRandomInt(0, lastIndex);
   const rightAnswer = `${progression[randomIndex]}`;
   progression[randomIndex] = '..';
