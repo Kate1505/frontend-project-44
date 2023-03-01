@@ -17,7 +17,8 @@ const getRoundData = () => {
   const num1 = getRandomInt(1, 10);
   const step = getRandomInt(1, 10);
   const progression = getProgression(num1, step, arrProgresLength);
-  const randomIndex = getRandomInt(1, 9);
+  const lastIndex = arrProgresLength - 1;
+  const randomIndex = getRandomInt(0, lastIndex);
   const rightAnswer = `${progression[randomIndex]}`;
   progression[randomIndex] = "..";
   const question = progression.join(" ");
