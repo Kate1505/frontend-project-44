@@ -16,8 +16,8 @@ const calculate = (randomNumber1, operator, randomNumber2) => {
 };
 const getRoundData = () => {
   const operations = ["+", "-", "*"];
-  const randomNumber1 = getRandomInt(100);
-  const randomNumber2 = getRandomInt(100);
+  const randomNumber1 = getRandomInt(1, 100);
+  const randomNumber2 = getRandomInt(1, 100);
   const operator = operations[Math.floor(Math.random() * operations.length)];
   const question = `${randomNumber1} ${operator} ${randomNumber2}`;
   const rightAnswer = String(calculate(randomNumber1, operator, randomNumber2));
