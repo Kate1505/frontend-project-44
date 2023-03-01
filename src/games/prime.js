@@ -1,5 +1,5 @@
 import runGame from "../index.js";
-import getRandomInt from "../randomNumber.js";
+import { getRandomNum } from "../randomNumber.js";
 
 const description =
   'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -14,7 +14,7 @@ const getPrime = (number) => {
   return true;
 };
 const getRoundData = () => {
-  const question = getRandomInt(10);
+  const question = getRandomNum(1, 10);
   const rightAnswer = getPrime(question) ? "yes" : "no";
   return [question, rightAnswer];
 };
