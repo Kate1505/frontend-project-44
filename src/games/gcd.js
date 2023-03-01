@@ -10,8 +10,8 @@ const getNod = (x, y) => {
 };
 
 const getRoundData = () => {
-  const x = getRandomInt(10);
-  const y = getRandomInt(10);
+  const x = getRandomInt(1, 10);
+  const y = getRandomInt(1, 10);
   const question = `${x} ${y}`;
   const rightAnswer = String(getNod(x, y));
   return [question, rightAnswer];
