@@ -14,7 +14,7 @@ const getProgression = (num1, step, arrProgresLength) => {
 
 const getRoundData = () => {
   const arrProgresLength = Math.floor(
-    Math.random() * (Math.floor(10) - Math.ceil(5) + 1) + Math.ceil(5)
+    Math.random() * (Math.floor(10) - Math.ceil(6) + 1) + Math.ceil(6)
   );
   const num1 = getRandomInt(10);
   const step = getRandomInt(10);
