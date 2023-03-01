@@ -1,21 +1,21 @@
-import runGame from "../index.js";
-import getRandomInt from "../randomNumber.js";
+import runGame from '../index.js';
+import getRandomInt from '../randomNumber.js';
 
-const description = "What is the result of the expression?";
+const description = 'What is the result of the expression?';
 const calculate = (randomNumber1, operator, randomNumber2) => {
   switch (operator) {
-    case "*":
+    case '*':
       return randomNumber1 * randomNumber2;
-    case "+":
+    case '+':
       return randomNumber1 + randomNumber2;
-    case "-":
+    case '-':
       return randomNumber1 - randomNumber2;
     default:
-      throw new Error("Error!");
+      throw new Error('Error!');
   }
 };
 const getRoundData = () => {
-  const operations = ["+", "-", "*"];
+  const operations = ['+', '-', '*'];
   const randomNumber1 = getRandomInt(1, 100);
   const randomNumber2 = getRandomInt(1, 100);
   const operator = operations[Math.floor(Math.random() * operations.length)];
