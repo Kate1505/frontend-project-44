@@ -1,23 +1,23 @@
 import runGame from '../index.js';
-import getRandomInt from '../randomNumber.js';
+import getRandomNumber from '../lib.js';
 
 const description = 'What is the result of the expression?';
-const calculate = (randomNumber1, operator, randomNumber2) => {
+const calculate = (number1, operator, number2) => {
   switch (operator) {
     case '*':
-      return randomNumber1 * randomNumber2;
+      return number1 * number2;
     case '+':
-      return randomNumber1 + randomNumber2;
+      return number1 + number2;
     case '-':
-      return randomNumber1 - randomNumber2;
+      return number1 - number2;
     default:
       throw new Error('Error!');
   }
 };
 const getRoundData = () => {
   const operations = ['+', '-', '*'];
-  const randomNumber1 = getRandomInt(1, 100);
-  const randomNumber2 = getRandomInt(1, 100);
+  const randomNumber1 = getRandomNumber(1, 100);
+  const randomNumber2 = getRandomNumber(1, 100);
   const operator = operations[Math.floor(Math.random() * operations.length)];
   const question = `${randomNumber1} ${operator} ${randomNumber2}`;
   const rightAnswer = String(calculate(randomNumber1, operator, randomNumber2));
