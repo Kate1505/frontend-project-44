@@ -3,9 +3,10 @@ import getRandomNumber from '../lib.js';
 
 const evenGame = () => {
   const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const isEven = (randomNum) => randomNum % 2 === 0;
   const getRoundData = () => {
     const randomNumber = getRandomNumber(1, 100);
-    const rightAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';
+    const rightAnswer = isEven(randomNumber) ? 'yes' : 'no';
     return [randomNumber, rightAnswer];
   };
 
