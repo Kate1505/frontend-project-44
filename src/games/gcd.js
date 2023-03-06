@@ -9,7 +9,7 @@ const getNod = (x, y) => {
   return getNod(y, x % y);
 };
 
-const getRoundData = () => {
+const getRound = () => {
   const x = getRandomNumber(1, 10);
   const y = getRandomNumber(1, 10);
   const question = `${x} ${y}`;
@@ -17,5 +17,5 @@ const getRoundData = () => {
   return [question, rightAnswer];
 };
 
-const gcdGame = () => runGame(description, getRoundData);
+const gcdGame = () => runGame(description, getRound);
 export default gcdGame;
