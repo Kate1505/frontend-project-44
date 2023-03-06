@@ -14,7 +14,7 @@ const calculate = (number1, operator, number2) => {
       throw new Error(`Unknown order state: '${operator}'!`);
   }
 };
-const getRoundData = () => {
+const getRound = () => {
   const operations = ['+', '-', '*'];
   const randomNumber1 = getRandomNumber(1, 10);
   const randomNumber2 = getRandomNumber(1, 10);
@@ -25,6 +25,6 @@ const getRoundData = () => {
   return [question, rightAnswer];
 };
 
-const calcGame = () => runGame(description, getRoundData);
+const calcGame = () => runGame(description, getRound);
 
 export default calcGame;
