@@ -25,6 +25,6 @@ const getRound = () => {
   return [question, rightAnswer];
 };
 
-const calcGame = () => runGame(description, getRound);
+const startCalcGame = () => runGame(description, getRound);
 
-export default calcGame;
+export default startCalcGame;
