@@ -4,12 +4,12 @@ import getRandomNumber from '../lib.js';
 const description = 'What number is missing in the progression?';
 
 const getProgression = (firstNumber, step, length) => {
-  const progressive = [];
+  const array = [];
   for (let i = 1; i < length; i += 1) {
     const result = firstNumber + step * i;
-    progressive.push(result);
+    Array.push(result);
   }
-  return progressive;
+  return array;
 };
 
 const getRound = () => {
@@ -24,5 +24,5 @@ const getRound = () => {
   const question = progression.join(' ');
   return [question, rightAnswer];
 };
-const progressionGame = () => runGame(description, getRound);
-export default progressionGame;
+const startProgressionGame = () => runGame(description, getRound);
+export default startProgressionGame;
