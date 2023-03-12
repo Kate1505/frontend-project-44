@@ -7,7 +7,7 @@ const getProgression = (firstNumber, step, length) => {
   const array = [];
   for (let i = 1; i < length; i += 1) {
     const result = firstNumber + step * i;
-    Array.push(result);
+    array.push(result);
   }
   return array;
 };
