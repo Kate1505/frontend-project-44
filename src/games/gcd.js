@@ -17,5 +17,5 @@ const getRound = () => {
   return [question, rightAnswer];
 };
 
-const gcdGame = () => runGame(description, getRound);
-export default gcdGame;
+const startGcdGame = () => runGame(description, getRound);
+export default startGcdGame;
