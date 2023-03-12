@@ -18,5 +18,5 @@ const getRound = () => {
   const rightAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, rightAnswer];
 };
-const primeGame = () => runGame(description, getRound);
-export default primeGame;
+const startPrimeGame = () => runGame(description, getRound);
+export default startPrimeGame;
